@@ -22,3 +22,17 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+# How to
+
+```sh
+  EDITOR="atom --wait" rails credentials:edit
+```
+
+https://docs.sendgrid.com/for-developers/parsing-email/setting-up-the-inbound-parse-webhook
+
+
+https://guides.rubyonrails.org/action_mailbox_basics.html#working-with-action-mailbox-in-development
+
+https://stackoverflow.com/questions/4868205/rails-mail-getting-the-body-as-plain-text/15818886

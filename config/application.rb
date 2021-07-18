@@ -18,5 +18,8 @@ module Newsletters
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Receive emails from Sendgrid
+    config.action_mailbox.ingress = :sendgrid
   end
 end

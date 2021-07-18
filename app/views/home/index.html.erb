@@ -1,0 +1,10 @@
+<h1>Emails</h1>
+
+<% ActionMailbox::InboundEmail.all.order(created_at: :desc).each do |inbound_email| %>
+  <h3>From</h3>
+  <%= inbound_email.mail.from %>
+  <h3>Encoded</h3>
+  <% html = inbound_email.mail.html_part %>
+  <hr>
+  <%= raw html.decoded if inbound_email.mail.html_part %>
+<% end %>

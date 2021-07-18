@@ -3,6 +3,7 @@ class NewslettersMailbox < ApplicationMailbox
   # inbound_email => ActionMailbox::InboundEmail record
 
   def process
-
+    p "Got here!"
+    p inbound_email
   end
 end

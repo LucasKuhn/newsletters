@@ -73,4 +73,10 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # Allow access via Ngrok
+  config.hosts << "8c8169ffd6f2.ngrok.io"
+
+  # Allow console from ngrok
+  config.web_console.permissions = '167.89.117.20'
 end
